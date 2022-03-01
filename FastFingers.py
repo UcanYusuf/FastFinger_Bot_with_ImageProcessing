@@ -41,11 +41,11 @@ def process(flag):
         if flag == False:
             text_area.send_keys(spam)
             text_area.send_keys(" ")
-            time.sleep(0.25)
+            time.sleep(0.25)  #If you decrease this value, bot will write faster but you can be banned. 
         else:
             text_area2.send_keys(spam)
             text_area2.send_keys(" ")
-            time.sleep(0.20)
+            time.sleep(0.20)  #If you decrease this value, bot will write faster but you can be banned.
 
 
 service = ChromeService(executable_path="chromedriver.exe")
@@ -105,7 +105,7 @@ notification_flag = False
 
 while timeValue < 10.00:
     try:
-        x, y = pyautogui.locateCenterOnScreen('notifications_eng.png', confidence=0.7)
+        x, y = pyautogui.locateCenterOnScreen('notifications_eng.png', confidence=0.7)  #Change it with notifications_tr.png to use in turkish.
         pyautogui.click(x, y)
         notification_flag = True
         break
