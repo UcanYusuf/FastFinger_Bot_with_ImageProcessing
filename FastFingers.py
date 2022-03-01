@@ -70,11 +70,11 @@ driver.find_element(By.XPATH, '//*[@id="speedtest-main"]/div[6]/div[1]/div[1]/a'
 
 wait_variable.until(E.presence_of_element_located((By.NAME, "data[User][email]")))
 email_area = driver.find_element(By.NAME, 'data[User][email]')
-email_area.send_keys("fastfinger2541@gmail.com")  # Change with your e-mail
+email_area.send_keys("............@.......com")  # Change with your e-mail
 
 wait_variable.until(E.presence_of_element_located((By.NAME, "data[User][password]")))
 pass_area = driver.find_element(By.NAME, "data[User][password]")
-pass_area.send_keys("25415434Aa.")  # Change with your password
+pass_area.send_keys(".............")  # Change with your password
 
 wait_variable.until(E.presence_of_element_located((By.ID, "login-form-submit")))
 driver.find_element(By.ID, "login-form-submit").click()
