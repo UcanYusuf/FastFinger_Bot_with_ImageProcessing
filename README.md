@@ -15,7 +15,7 @@ Requirements
 Using
     -Creat a new account (https://10fastfingers.com/typing-test)
     -Change your pytesseract.exe path which in the FastFinger.py (line 27)
-    -Choose your language (line 56)
+    -Choose your language (line 56 and 108)
     -Enter your fast finger account email address (line 73)
     -Enter your password (line 77)
     -python FastFinger.py
