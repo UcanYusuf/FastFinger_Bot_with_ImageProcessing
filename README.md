@@ -13,6 +13,7 @@ Requirements
     -Selenium (Tested 4.1.0)
 
 Using
+
     -Creat a new account (https://10fastfingers.com/typing-test)
     -Change your pytesseract.exe path which in the FastFinger.py (line 27)
     -Choose your language (line 56 and 108)
