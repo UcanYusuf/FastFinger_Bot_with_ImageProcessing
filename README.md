@@ -6,8 +6,8 @@ The project supports Turkish and English languages.
 
 Update 1.0
 
-It has been edited to print wrong words at specified intervals to pass the anti cheat system. Thus, a test with 100% accuracy and suspicion was prevented.
-
+    - It has been edited to print wrong words at specified intervals to pass the anti cheat system. Thus, a test with 100% accuracy and suspicion was prevented.
+    - Region_2 width has been changed 200 from 205. 
 Requirements
     
     -OpenCv (Tested 4.0.1)
