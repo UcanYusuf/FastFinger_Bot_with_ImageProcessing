@@ -4,6 +4,10 @@ This application has been developed for use on the "Fast Finger" website. It is 
 This project was developed for testing and entertainment purposes for use on Fast Finger (https://10fastfingers.com/typing-test/english). 
 The project supports Turkish and English languages. 
 
+Update 1.0
+
+It has been edited to print wrong words at specified intervals to pass the anti cheat system. Thus, a test with 100% accuracy and suspicion was prevented.
+
 Requirements
     
     -OpenCv (Tested 4.0.1)
