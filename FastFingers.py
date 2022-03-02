@@ -141,7 +141,7 @@ if notification_flag:
     driver.find_element(By.XPATH, '//*[@id="start-btn"]').click()
 
     time.sleep(1)
-    region2 = [485, 290, 740, 205]  # This values can change for different resolutions. Default 1920x1080
+    region2 = [485, 290, 740, 200]  # This values can change for different resolutions. Default 1920x1080
 
     text_area2 = driver.find_element(By.ID, "word-input")
     pic = pyautogui.screenshot(region=region2)
