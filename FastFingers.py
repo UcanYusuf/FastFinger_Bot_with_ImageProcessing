@@ -33,19 +33,40 @@ def process(flag):
     else:
         data = pytesseract.image_to_string(thresh, lang='eng', config='--psm 1')
 
+    word_counter = 0
     print(data)
     words = data.split()
+
     for i in words:
         pyperclip.copy(i)
         spam = pyperclip.paste()
-        if flag == False:
+
+        if not flag:
+            if word_counter == 8:
+                spam = "wrong"
+                word_counter = 0
+
             text_area.send_keys(spam)
             text_area.send_keys(" ")
-            time.sleep(0.25)  #If you decrease this value, bot will write faster but you can be banned. 
+            time.sleep(0.25)  #If you decrease this value, bot will write faster but you can be banned.
+
         else:
-            text_area2.send_keys(spam)
+            if spam != "¥":
+                text_area2.send_keys(spam)
+                text_area2.send_keys(" ")
+                time.sleep(0.25)  #If you decrease this value, bot will write faster but you can be banned.
+
+            else:
+                pass
+
+        word_counter += 1
+
+    if flag:
+        for i in range(3):
+            text_area2.send_keys("x")
             text_area2.send_keys(" ")
-            time.sleep(0.20)  #If you decrease this value, bot will write faster but you can be banned.
+            time.sleep(0.25)  #If you decrease this value, bot will write faster but you can be banned.
+
 
 
 service = ChromeService(executable_path="chromedriver.exe")
